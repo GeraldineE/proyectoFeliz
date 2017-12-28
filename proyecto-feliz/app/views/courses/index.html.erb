@@ -1,0 +1,17 @@
+
+<%= form_tag('/courses/search', method: 'post') do %>
+    <!-- aqui vamos a colocar el texto para buscar
+  form_tag es un helper ( es decir un generador de elementos visuales)
+  en este caso va a generar un formulario que envia los campos al metodo search del controlador de courses
+  -->
+  <%= text_field_tag :query %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<ul>
+<!-- este seria la pagina de listado ( no esta muy bonita pero funciona XD) a mi me parece bonita porque si funciona jaja -->
+<% @courses.each do |course| %>
+  <li> <%= course.title %> </li>
+<% end %>
+
+</ul>
