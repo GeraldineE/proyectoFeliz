@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20171228031431) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "Level", limit: 50
   end
 
 end

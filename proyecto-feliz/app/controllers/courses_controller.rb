@@ -11,7 +11,7 @@ class CoursesController < ApplicationController
 
   # vamos a crear un metodo para buscar
   def search
-    @courses = Course.where("title LIKE '%#{params[:query]}%' OR description LIKE '%#{params[:query]}%' ")
+    @courses = Course.where("title LIKE '%#{params[:query]}%' OR description LIKE '%#{params[:query]}%' OR Level LIKE '%#{params[:query]}%'  ")
 
     # Esto seria igual a SELECT * FROM Courses WHERE title LIKE '%boring%' OR description LIKE '%boring%'
     # se puede usar el where tambien por que permite ingresar todo el query como string, ideal para un buscador

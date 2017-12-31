@@ -8,10 +8,30 @@
   <%= submit_tag "Search" %>
 <% end %>
 
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Level</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
 <ul>
 <!-- este seria la pagina de listado ( no esta muy bonita pero funciona XD) a mi me parece bonita porque si funciona jaja -->
+<tbody>
 <% @courses.each do |course| %>
-  <li> <%= course.title %> </li>
+<tr><%=  %>
+  <td> <%= course.title %> </td>
+  <td> <%= course.description %> </td>
+  <td> <%= course.Level %> </td>
+</tr>
 <% end %>
 
 </ul>
+
+</tbody>
+</table>
