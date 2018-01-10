@@ -2,13 +2,19 @@
 <html>
   <head>
     <title>ProyectoFeliz</title>
-    <%= csrf_meta_tags %>
 
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
   </head>
+  usemos la 2 que es facil :D
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="Search parent-div">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
+git

@@ -1,0 +1,19 @@
+<%= form_for @course, url: course_path, html: {class: "horizontal-form"} do |form|%>
+  <div class="form-group">
+    <label> Titulo </label>
+    <%= form.text_field :title %>
+  </div>
+  <div class="form-group">
+    <label> Descripcion </label>
+    <%= form.text_field :description %>
+  </div>
+  <div class="form-group">
+    <label> Nivel </label>
+    <%= form.text_field :Level %>
+  </div>
+  <div class="form-group">
+    <label> Imagen </label>
+    <%= form.file_field :picture %> ahora sale un boton para subir una foto
+  </div>
+  <button type="submit"> Crear Curso </button>
+<%end%>
