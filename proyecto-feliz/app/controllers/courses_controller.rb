@@ -19,8 +19,8 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(course_params) # crea un curso con todos los parametros que le envia el formulario
     @course.save
-    @courses = Course.all
-    render :index
+    @courses = Course.all # aqui consultamos por todos los cursos
+    render :index  # y pintamos otra vez la lista de cursos
 
   end
 

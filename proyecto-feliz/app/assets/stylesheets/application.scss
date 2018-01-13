@@ -14,6 +14,10 @@
  *= require_self
  */
 
-@import "bootstrap";
+@import "bootstrap"; // esto solo existe en sass, poder importar otras librerias
 
 // espera no lo borres hare algo ñoñolo anotare xD
+
+// Sass es un lenguaje distinto al CSS con mas funciones,
+// pero como los navegadores no soportan sass, este se compila a css
+// por eso debo cambiarle de lenguaje
